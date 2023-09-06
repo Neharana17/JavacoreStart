@@ -1,14 +1,9 @@
-package aug27;
+package Sept3;
 
 public class Lab001 {
     public static void main(String[] args) {
-        System.out.println(" *");
-        System.out.println(" * *");
-        System.out.println(" * * *");
-        System.out.println(" * * * *");
-
+        char c1 = 'p';
+        char c2 = 'k';
+        System.out.println(c1 + c2);
     }
-
-
-
 }
