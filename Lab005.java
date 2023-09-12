@@ -1,24 +1,32 @@
-package aug27;
+package sept9.Loops.array;
+
+import java.util.Scanner;
 
 public class Lab005 {
     public static void main(String[] args) {
-        int Height=10;
-        float weight= 5.5F;
-        int width1=5;
-        int Height2=20;
-        float Height1=22.5F;
-        int area= Height * width1;
-        int  parameter= 2*(Height * width1);
+        System.out.println("Enter an subject");
+        Scanner sc = new Scanner(System.in);
+        int Total_subject = sc.nextInt();
+        int[] marks = new int[Total_subject];
+        for (int i = 0; i < marks.length; i++) {
+            System.out.println("Enter marks one by one ");
+            marks[i] = sc.nextInt();
 
-        float area1= weight*Height1;
+        }
+       // System.out.println("Hear is your marks");
+        for (int i = 0; i < marks.length; i++) ;
+        {
+int i=0;
+            System.out.println("Hear is your marks: " + marks[i]);
 
+        }
+        int max=marks[0];
+        for(int i=0;i<marks.length;i++){
+            if(marks[i]>max){
+                max=marks[i];
+            }
 
-        System.out.println("area of rectangle="+area);
-        System.out.println("area of parameter="+parameter);
-        System.out.println("area of rectangle="+area1);
-
-
-
-
+        }
+        System.out.println("maximum marks is :"+max);
     }
 }
